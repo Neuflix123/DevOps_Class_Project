@@ -1,16 +1,17 @@
-name: CI Workflow
+name: Super-Linter
 
-on:
-  push:
-    branches:["master"]
+on: push
 
 jobs:
-  build:
+  super-lint:
+    name: Lint code base
     runs-on: ubuntu-latest
-
     steps:
-    -name: Checkout repository
-     user: action/checkout@v4
+      -name: Checkout code
+       user: action/checkout@v2
 
-    -name: Run Hello
-     run: echo "Workflow berjalan sukses!"
+      -name: Run Super-Linter
+       user: github/super-linter@v4
+       env:
+         DEFAULT_BRANCH: main
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
