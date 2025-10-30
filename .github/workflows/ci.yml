@@ -1,0 +1,16 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:["master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    -name: Checkout repository
+     user: action/checkout@v4
+
+    -name: Run Hello
+     run: echo "Workflow berjalan sukses!"
