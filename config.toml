@@ -2,7 +2,8 @@ baseURL = "https://Neuflix123.github.io/DevOps_Class_Project/"
 languageCode = "en-us"
 title = "DevOps Class Project"
 theme = "ananke"
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [params]
   author = "Jackson"
