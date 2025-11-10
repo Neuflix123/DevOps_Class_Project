@@ -1,0 +1,9 @@
+baseURL = "https://Neuflix123.github.io/DevOps_Class_Project/"
+languageCode = "en-us"
+title = "DevOps Class Project"
+theme = "ananke"
+paginate = 10
+
+[params]
+  author = "Jackson"
+  description = "DevOps Blog for CI/CD Practice"
